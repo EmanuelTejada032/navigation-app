@@ -11,12 +11,14 @@ const HomeScreen = () => {
     <SafeAreaView>
       <View className="px-10">
         <Text className="text-4xl mb-4 text-primary mt-5">HomeScreen</Text>
-        <Link href='/products' asChild>
-          <CustomButton color="primary" className="mb-4"> Products</CustomButton>
-        </Link>
 
-        <CustomButton color="primary" className="mb-4" onPress={() => router.push('/products')}> Products</CustomButton>
-        <CustomButton variant="text-only" className="mb-4" color="tertiary" onPress={() => router.push('/products')}> Products</CustomButton>
+        <CustomButton color="primary" className="mb-4" onPress={() => router.push('/products')}> Products </CustomButton>
+        <CustomButton color="secondary" className="mb-4" onPress={() => router.push('/profile')}> Profile </CustomButton>
+        <CustomButton color="tertiary" className="mb-4" onPress={() => router.push('/settings')}> Settings </CustomButton>
+        
+        <Link href='/products' asChild>
+          <CustomButton variant="text-only" className="mb-4"> Products</CustomButton>
+        </Link>
 
         {/* <Link className='text-2xl mb-5 text-secondary-200 font-mont-light' href={"/products"}> Products</Link>
         <Link className='text-2xl mb-5 text-secondary-200 font-mont-light' href={"/profile"}> Profile</Link>
